@@ -9,3 +9,9 @@ var myName;
 //Task 3. Storing Values with the Assignment Operator
 var a;
 a = 7;
+
+//Task 4. Assigning the Value of One Variable to Another
+var a;
+a = 7;
+var b;
+b = a;
