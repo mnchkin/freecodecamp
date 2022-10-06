@@ -60,3 +60,6 @@ const difference = 45 - 33;
 
 //Task 13. Multiply Two Numbers with JavaScript
 const product = 8 * 10;
+
+//Task 14. Divide One Number by Another with JavaScript
+const quotient = 66 / 33;
