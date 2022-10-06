@@ -74,3 +74,6 @@ myVar--;
 
 //Task 17. Create Decimal Numbers with JavaScript
 const myDecimal = 5.7;
+
+//Task 18. Multiply Two Decimals with JavaScript
+const product = 2.0 * 2.5;
