@@ -51,3 +51,6 @@ const FCC = 'freeCodeCamp';
 let fact = 'is cool!';
 fact = 'is awesome!';
 console.log(FCC, fact);
+
+//Task 11. Add Two Numbers with JavaScript
+const sum = 10 + 10;
