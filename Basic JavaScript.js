@@ -67,3 +67,7 @@ const quotient = 66 / 33;
 //Task 15. Increment a Number with JavaScript
 let myVar = 87;
 myVar++;
+
+//Task 16. Decrement a Number with JavaScript
+let myVar = 11;
+myVar--;
