@@ -83,3 +83,11 @@ const quotient = 4.4 / 2.0;
 
 //Task 20. Finding a Remainder in JavaScript
 const remainder = 11 % 3;
+
+//Task 21. Compound Assignment With Augmented Addition
+let a = 3;
+let b = 17;
+let c = 12;
+a += 12;
+b += 9;
+c += 7;
