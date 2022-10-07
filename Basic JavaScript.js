@@ -118,3 +118,6 @@ c /= 11;
 
 //Task 25. Escaping Literal Quotes in Strings
 const myStr = 'I am a "double quoted" string inside "double quotes".';
+
+//Task 26. Quoting Strings with Single Quotes
+const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
