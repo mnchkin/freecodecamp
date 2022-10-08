@@ -135,3 +135,8 @@ myStr += 'This is the second sentence.';
 //Task 30. Constructing Strings with Variables
 const myName = 'Timur';
 const myStr = 'My name is ' + myName + 'and I am well!';
+
+//Task 31. Appending Variables to Strings
+const someAdjective = 'wonderful';
+let myStr = 'Learning to code is ';
+myStr += someAdjective;
