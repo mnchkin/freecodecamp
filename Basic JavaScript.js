@@ -131,3 +131,7 @@ const myStr = 'This is the start. ' + 'This is the end.';
 //Task 29. Concatenating Strings with the Plus Equals Operator
 let myStr = 'This is the first sentence. ';
 myStr += 'This is the second sentence.';
+
+//Task 30. Constructing Strings with Variables
+const myName = 'Timur';
+const myStr = 'My name is ' + myName + 'and I am well!';
