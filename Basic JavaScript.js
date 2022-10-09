@@ -150,3 +150,7 @@ lastNameLength = lastName.length;
 let firstLetterOfLastName = '';
 const lastName = 'Lovelace';
 firstLetterOfLastName = lastName[0];
+
+//Task 34. Understand String Immutability
+let myStr = 'Jello World';
+myStr = 'Hello World';
