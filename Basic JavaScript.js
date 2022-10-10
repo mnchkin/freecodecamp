@@ -185,3 +185,9 @@ const wordBlanks =
 
 // Task 39. Store Multiple Values in one Variable using JavaScript Arrays
 const myArray = ['cat', 1];
+
+//Task 40. Nest one Array within Another Array
+const myArray = [
+  ['Bulls', 23],
+  ['White Sox', 45],
+];
