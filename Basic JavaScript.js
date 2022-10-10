@@ -182,3 +182,6 @@ const wordBlanks =
   ' ourselves ' +
   myAdverb +
   '.';
+
+// Task 39. Store Multiple Values in one Variable using JavaScript Arrays
+const myArray = ['cat', 1];
