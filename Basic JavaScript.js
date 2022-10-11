@@ -215,3 +215,10 @@ const myArray = [
   ['cat', 2],
 ];
 myArray.push(['dog', 3]);
+
+//Task 45. Manipulate Arrays With pop()
+const myArray = [
+  ['John', 23],
+  ['cat', 2],
+];
+const removedFromMyArray = myArray.pop();
