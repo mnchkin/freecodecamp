@@ -222,3 +222,10 @@ const myArray = [
   ['cat', 2],
 ];
 const removedFromMyArray = myArray.pop();
+
+//Task 46. Manipulate Arrays With shift()
+const myArray = [
+  ['John', 23],
+  ['dog', 3],
+];
+const removedFromMyArray = myArray.shift();
