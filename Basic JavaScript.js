@@ -208,3 +208,10 @@ const myArray = [
   [[10, 11, 12], 13, 14],
 ];
 const myData = myArray[2][1];
+
+//Task 44. Manipulate Arrays With push()
+const myArray = [
+  ['John', 23],
+  ['cat', 2],
+];
+myArray.push(['dog', 3]);
