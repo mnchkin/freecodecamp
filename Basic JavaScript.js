@@ -191,3 +191,7 @@ const myArray = [
   ['Bulls', 23],
   ['White Sox', 45],
 ];
+
+//Task 41. Access Array Data with Indexes
+const myArray = [50, 60, 70];
+const myData = myArray[0];
