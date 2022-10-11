@@ -195,3 +195,7 @@ const myArray = [
 //Task 41. Access Array Data with Indexes
 const myArray = [50, 60, 70];
 const myData = myArray[0];
+
+//Task 42. Modify Array Data With Indexes
+const myArray = [18, 64, 99];
+myArray[0] = 45;
