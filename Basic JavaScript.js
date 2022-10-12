@@ -232,3 +232,12 @@ const removedFromMyArray = myArray.shift();
 
 //Task 47. Manipulate Arrays With unshift()
 myArray.unshift(['Paul', 35]);
+
+//Task 48. Shopping List
+const myList = [
+  ['Banana', 3],
+  ['Apple', 4],
+  ['Orange', 5],
+  ['Peach', 6],
+  ['Pineaple', 7],
+];
