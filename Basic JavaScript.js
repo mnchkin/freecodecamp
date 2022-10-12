@@ -229,3 +229,6 @@ const myArray = [
   ['dog', 3],
 ];
 const removedFromMyArray = myArray.shift();
+
+//Task 47. Manipulate Arrays With unshift()
+myArray.unshift(['Paul', 35]);
