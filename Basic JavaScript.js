@@ -241,3 +241,9 @@ const myList = [
   ['Peach', 6],
   ['Pineaple', 7],
 ];
+
+//Task 49. Write Reusable JavaScript with Functions
+function reusableFunction() {
+  console.log('Hi World');
+}
+reusableFunction();
