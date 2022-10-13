@@ -259,3 +259,10 @@ functionWithArgs(7, 9);
 function timesFive(num) {
   return num * 5;
 }
+
+//Task 52. Global Scope and Functions
+const myGlobal = 10;
+
+function fun1() {
+  oopsGlobal = 5;
+}
