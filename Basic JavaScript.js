@@ -274,3 +274,13 @@ function myLocalScope() {
 }
 myLocalScope();
 console.log('outside myLocalScope', myVar);
+
+//Task 54. Global vs. Local Scope in Functions
+const outerWear = 'T-Shirt';
+
+function myOutfit() {
+  const outerWear = 'sweater';
+  return outerWear;
+}
+
+myOutfit();
