@@ -266,3 +266,11 @@ const myGlobal = 10;
 function fun1() {
   oopsGlobal = 5;
 }
+
+//Task 53. Local Scope and Functions
+function myLocalScope() {
+  const myVar = 'pou';
+  console.log('inside myLocalScope', myVar);
+}
+myLocalScope();
+console.log('outside myLocalScope', myVar);
