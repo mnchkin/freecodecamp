@@ -254,3 +254,8 @@ function functionWithArgs(arg1, arg2) {
 }
 functionWithArgs(1, 2);
 functionWithArgs(7, 9);
+
+//Task 51. Return a Value from a Function with Return
+function timesFive(num) {
+  return num * 5;
+}
