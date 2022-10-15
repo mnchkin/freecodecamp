@@ -326,3 +326,11 @@ function welcomeToBooleans() {
   const func = true;
   return true;
 }
+
+//Task 59. Use Conditional Logic with If Statements
+function trueOrFalse(wasThatTrue) {
+  if (wasThatTrue) {
+    return 'Yes, that was true';
+  }
+  return 'No, that was false';
+}
