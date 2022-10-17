@@ -334,3 +334,25 @@ function trueOrFalse(wasThatTrue) {
   }
   return 'No, that was false';
 }
+
+//Task 60. Comparison with the Equality Operator
+function testEqual(val) {
+  if (val == 12) {
+    // Change this line
+    return 'Equal';
+  }
+  return 'Not Equal';
+}
+
+testEqual(10);
+
+//Task 61. Comparison with the Strict Equality Operator
+function testStrict(val) {
+  if (val === 7) {
+    // Change this line
+    return 'Equal';
+  }
+  return 'Not Equal';
+}
+
+testStrict(10);
