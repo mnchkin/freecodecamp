@@ -444,3 +444,13 @@ function testLessOrEqual(val) {
 }
 
 testLessOrEqual(10);
+
+//Task 69. Comparisons with the Logical And Operator
+function testLogicalAnd(val) {
+  if (val <= 50 && val >= 25) {
+    return 'Yes';
+  }
+  return 'No';
+}
+
+testLogicalAnd(10);
