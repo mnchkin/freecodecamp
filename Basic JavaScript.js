@@ -338,7 +338,6 @@ function trueOrFalse(wasThatTrue) {
 //Task 60. Comparison with the Equality Operator
 function testEqual(val) {
   if (val == 12) {
-    // Change this line
     return 'Equal';
   }
   return 'Not Equal';
@@ -349,7 +348,6 @@ testEqual(10);
 //Task 61. Comparison with the Strict Equality Operator
 function testStrict(val) {
   if (val === 7) {
-    // Change this line
     return 'Equal';
   }
   return 'Not Equal';
@@ -360,10 +358,19 @@ testStrict(10);
 //Task 62. Practice comparing different values
 function compareEquality(a, b) {
   if (a === b) {
-    // Change this line
     return 'Equal';
   }
   return 'Not Equal';
 }
 
 compareEquality(10, '10');
+
+//Task 63. Comparison with the Inequality Operator
+function testNotEqual(val) {
+  if (val != 99) {
+    return 'Not Equal';
+  }
+  return 'Equal';
+}
+
+testNotEqual(10);
