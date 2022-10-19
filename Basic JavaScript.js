@@ -637,7 +637,13 @@ function chainToSwitch(val) {
     case 99:
       answer = 'Missed me by this much!';
       break;
-    case 7:
+    case 'John':
+      answer = '';
+      break;
+    case 156:
+      answer = '';
+      break;
+    default:
       answer = 'Ate Nine';
       break;
   }
