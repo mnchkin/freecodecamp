@@ -651,3 +651,10 @@ function chainToSwitch(val) {
 }
 
 chainToSwitch(7);
+
+//Task 80. Returning Boolean Values from Functions
+function isLess(a, b) {
+  return a < b;
+}
+
+isLess(10, 15);
