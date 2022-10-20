@@ -706,3 +706,11 @@ cc(3);
 cc(7);
 cc('K');
 cc('A');
+
+//Task 83. Build JavaScript Objects
+const myDog = {
+  name: 'Jake',
+  legs: 4,
+  tails: 1,
+  friends: ['I', 'Eve'],
+};
