@@ -744,3 +744,13 @@ const testObj = {
 
 const playerNumber = 16;
 const player = testObj[playerNumber];
+
+//Task 87. Updating Object Properties
+const myDog = {
+  name: 'Coder',
+  legs: 4,
+  tails: 1,
+  friends: ['freeCodeCamp Campers'],
+};
+
+myDog.name = 'Happy Coder';
