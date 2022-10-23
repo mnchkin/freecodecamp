@@ -886,3 +886,13 @@ function updateRecords(records, id, prop, value) {
 }
 
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+
+//Task 96. Iterate with JavaScript While Loops
+const myArray = [];
+
+let i = 5;
+
+while (i >= 0) {
+  myArray.push(i);
+  i--;
+}
