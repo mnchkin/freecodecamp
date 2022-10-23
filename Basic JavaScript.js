@@ -801,3 +801,20 @@ function checkObj(obj, checkProp) {
     return 'Not Found';
   }
 }
+
+//Task 92. Manipulating Complex Objects
+const myMusic = [
+  {
+    artist: 'Billy Joel',
+    title: 'Piano Man',
+    release_year: 1973,
+    formats: ['CD', '8T', 'LP'],
+    gold: true,
+  },
+  {
+    artist: 'Markul',
+    title: 'B.I.D.',
+    release_year: 2019,
+    formats: ['CD', '8T', 'LP'],
+  },
+];
