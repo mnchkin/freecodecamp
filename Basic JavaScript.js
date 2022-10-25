@@ -1001,3 +1001,8 @@ function lookUpProfile(name, prop) {
 }
 
 lookUpProfile('Akira', 'likes');
+
+//Task 105. Generate Random Fractions with JavaScript
+function randomFraction() {
+  return Math.random();
+}
