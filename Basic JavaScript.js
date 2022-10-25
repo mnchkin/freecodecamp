@@ -1006,3 +1006,8 @@ lookUpProfile('Akira', 'likes');
 function randomFraction() {
   return Math.random();
 }
+
+//Task 106. Generate Random Whole Numbers with JavaScript
+function randomWholeNum() {
+  return Math.floor(Math.random() * 10);
+}
