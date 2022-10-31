@@ -41,9 +41,20 @@ const myConcat = (arr1, arr2) => arr1.concat(arr2);
 console.log(myConcat([1, 2], [3, 4, 5]));
 
 //Task 6. Set Default Parameters for Your Functions
+//+1 при value == ''
 const increment = (number, value = 1) => number + value;
 
 //Task 7. Use the Rest Parameter with Function Parameters
+//Сумма всех чисел в массиве
 const sum = (...args) => {
   return args.reduce((a, b) => a + b, 0);
 };
+
+//Task 8. Use the Spread Operator to Evaluate Arrays In-Place
+//Копирование всего из 1 массива во 2
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+arr2 = [...arr1];
+
+console.log(arr2);
