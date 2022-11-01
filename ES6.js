@@ -205,3 +205,8 @@ stringFunctions.lowercaseString('WORLD!');
 export default function subtract(x, y) {
   return x - y;
 }
+
+//Task 25. Import a Default Export
+import subtract from './math_functions.js';
+
+subtract(7, 4);
