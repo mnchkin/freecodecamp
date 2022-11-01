@@ -213,3 +213,14 @@ subtract(7, 4);
 
 //Task 26. Create a JavaScript Promise
 const makeServerRequest = new Promise((resolve, reject) => {});
+
+//Task 27. Complete a Promise with resolve and reject
+const makeServerRequest = new Promise((resolve, reject) => {
+  let responseFromServer;
+
+  if (responseFromServer) {
+    resolve('We got the data');
+  } else {
+    reject('Data not received');
+  }
+});
