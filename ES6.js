@@ -189,3 +189,8 @@ export const uppercaseString = (string) => {
 export const lowercaseString = (string) => {
   return string.toLowerCase();
 };
+
+//Task 22. Reuse JavaScript Code Using import
+import { uppercaseString, lowercaseString } from './string_functions.js';
+uppercaseString('hello');
+lowercaseString('WORLD!');
