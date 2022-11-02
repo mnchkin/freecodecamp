@@ -36,3 +36,10 @@ let result = twinkleStar.match(starRegex);
 let exampleStr = "Let's have fun with regular expressions!";
 let unRegex = /.un/;
 let result = unRegex.test(exampleStr);
+
+//Task 8. Match Single Character with Multiple Possibilities
+//Извлечение всех гласных
+let quoteSample =
+  'Beware of bugs in the above code; I have only proved it correct, not tried it.';
+let vowelRegex = /[aeiou]/gi;
+let result = quoteSample.match(vowelRegex);
