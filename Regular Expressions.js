@@ -19,3 +19,8 @@ let result = petRegex.test(petString);
 let myString = 'freeCodeCamp';
 let fccRegex = /freecodecamp/i;
 let result = fccRegex.test(myString);
+
+//Task 5. Extract Matches
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/;
+let result = extractStr.match(codingRegex);
