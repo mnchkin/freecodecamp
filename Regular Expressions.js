@@ -49,3 +49,9 @@ let result = quoteSample.match(vowelRegex);
 let quoteSample = 'The quick brown fox jumps over the lazy dog.';
 let alphabetRegex = /[a-z]/gi;
 let result = quoteSample.match(alphabetRegex);
+
+//Task 10. Match Numbers and Letters of the Alphabet
+//Извлечение цифр и букв
+let quoteSample = 'Blueberry 3.141592653s are delicious.';
+let myRegex = /[h-s2-6]/gi;
+let result = quoteSample.match(myRegex);
