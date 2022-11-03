@@ -70,3 +70,8 @@ let result = difficultSpelling.match(myRegex);
 //Task 13. Match Characters that Occur Zero or More Times
 let chewieRegex = /Aaa*/;
 let result = chewieQuote.match(chewieRegex);
+
+//Task 14. Find Characters with Lazy Matching
+let text = '<h1>Winter is coming</h1>';
+let myRegex = /<.*?>/;
+let result = text.match(myRegex);
