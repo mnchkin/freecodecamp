@@ -75,3 +75,6 @@ let result = chewieQuote.match(chewieRegex);
 let text = '<h1>Winter is coming</h1>';
 let myRegex = /<.*?>/;
 let result = text.match(myRegex);
+
+//Task 15. Find One or More Criminals in a Hunt
+let reCriminals = /C+/;
