@@ -90,3 +90,9 @@ let result = calRegex.test(rickyAndCal);
 let caboose = 'The last car on a train is the caboose';
 let lastRegex = /caboose$/;
 let result = lastRegex.test(caboose);
+
+//Task 18. Match All Letters and Numbers
+//Извлекает все буквы и цифры
+let quoteSample = 'The five boxing wizards jump quickly.';
+let alphabetRegexV2 = /\w/g;
+let result = quoteSample.match(alphabetRegexV2).length;
