@@ -80,6 +80,13 @@ let result = text.match(myRegex);
 let reCriminals = /C+/;
 
 //Task 16. Match Beginning String Patterns
+//Поиск шаблонов в начале строк
 let rickyAndCal = 'Cal and Ricky both like racing.';
 let calRegex = /^Cal/;
 let result = calRegex.test(rickyAndCal);
+
+//Task 17. Match Ending String Patterns
+//Поиск шаблонов в конце строк
+let caboose = 'The last car on a train is the caboose';
+let lastRegex = /caboose$/;
+let result = lastRegex.test(caboose);
