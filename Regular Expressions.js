@@ -108,3 +108,9 @@ let result = quoteSample.match(nonAlphabetRegex).length;
 let movieName = '2001: A Space Odyssey';
 let numRegex = /\d/g;
 let result = movieName.match(numRegex).length;
+
+//Task 21. Match All Non-Numbers
+//Извлекает всё кроме цифр
+let movieName = '2001: A Space Odyssey';
+let noNumRegex = /\D/g;
+let result = movieName.match(noNumRegex).length;
