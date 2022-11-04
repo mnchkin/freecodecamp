@@ -114,3 +114,16 @@ let result = movieName.match(numRegex).length;
 let movieName = '2001: A Space Odyssey';
 let noNumRegex = /\D/g;
 let result = movieName.match(noNumRegex).length;
+
+//Task 22. Restrict Possible Usernames
+let username = 'JackOfAllTrades';
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
+//^ - начало ввода
+//[a-z] - первый символ - буква
+//[a-z]+ - следующие символы являются буквами
+//\d*$ - ввод заканчивается 0 или более цифрами
+//| - или
+//^[a-z] - первый символ - буква
+//\d\d+ - следующие символы состоят из 2 или более цифр
+//$ - конец ввода
+let result = userCheck.test(username);
