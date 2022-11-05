@@ -27,3 +27,18 @@ CREATE DATABASE second_database;
 
 --Task 10. Создание таблицы
 CREATE TABLE first_table();
+
+--Task 11
+\d
+
+--Task 12
+CREATE TABLE second_table();
+
+--Task 13
+\d
+
+--Task 14. Больше информации о таблице
+\d second_table
+
+--Task 15. Добавление колонны в таблицу
+ALTER TABLE second_table ADD COLUMN first_column INT;
