@@ -87,3 +87,18 @@ SELECT * FROM second_table;
 
 --Task 30
 INSERT INTO second_table(id, username) VALUES(2, 'Mario');
+
+--Task 31
+SELECT * FROM second_table;
+
+--Task 32
+INSERT INTO second_table(id, username) VALUES(3, 'Luigi');
+
+--Task 33
+SELECT * FROM second_table;
+
+--Task 34. Удаление строки
+DELETE FROM second_table WHERE username='Luigi';
+
+--Task 35
+SELECT * FROM second_table;
