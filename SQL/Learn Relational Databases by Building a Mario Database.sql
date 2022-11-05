@@ -72,3 +72,18 @@ ALTER TABLE second_table ADD COLUMN name VARCHAR(30);
 
 --Task 25
 \d second_table
+
+--Task 26. Переименование колонны
+ALTER TABLE second_table RENAME COLUMN name TO username;
+
+--Task 27
+\d second_table
+
+--Task 28. Добавление данных в таблицу
+INSERT INTO second_table(id, username) VALUES(1, 'Samus');
+
+--Task 29. Просмотр данных со всеми колоннами
+SELECT * FROM second_table;
+
+--Task 30
+INSERT INTO second_table(id, username) VALUES(2, 'Mario');
