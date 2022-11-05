@@ -102,3 +102,18 @@ DELETE FROM second_table WHERE username='Luigi';
 
 --Task 35
 SELECT * FROM second_table;
+
+--Task 36
+DELETE FROM second_table WHERE username='Mario';
+
+--Task 37
+DELETE FROM second_table WHERE username='Samus';
+
+--Task 38
+SELECT * FROM second_table;
+
+--Task 39
+\d second_table
+
+--Task 40
+ALTER TABLE second_table DROP COLUMN username;
