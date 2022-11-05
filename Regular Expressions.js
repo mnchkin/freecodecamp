@@ -188,3 +188,9 @@ let replaceText = '$3 $2 $1'; // Change this line
 let result = str.replace(fixRegex, replaceText);
 //Пример
 'Code Camp'.replace(/(\w+)\s(\w+)/, '$2 $1');
+
+//Task 33. Remove Whitespace from Start and End
+//Удаление пробелов в начале и в конце
+let hello = '   Hello, World!  ';
+let wsRegex = /^\s+|\s+$/g;
+let result = hello.replace(wsRegex, '');
