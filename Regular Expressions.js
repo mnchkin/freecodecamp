@@ -127,3 +127,9 @@ let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
 //\d\d+ - следующие символы состоят из 2 или более цифр
 //$ - конец ввода
 let result = userCheck.test(username);
+
+//Task 23. Match Whitespace
+//Извлечение пробелов
+let sample = 'Whitespace is important in separating words';
+let countWhiteSpace = /\s/g;
+let result = sample.match(countWhiteSpace);
