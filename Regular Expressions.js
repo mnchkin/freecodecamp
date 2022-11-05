@@ -169,3 +169,8 @@ let result = pwRegex.test(sampleWord);
 let password = 'abc123';
 let checkPass = /(?=\w{3,6})(?=\D*\d)/;
 checkPass.test(password);
+
+//Task 30. Check For Mixed Grouping of Characters
+let myString = 'Eleanor Roosevelt';
+let myRegex = /(Eleanor|Franklin D.) Roosevelt/;
+let result = myRegex.test(myString);
