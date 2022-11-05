@@ -133,3 +133,9 @@ let result = userCheck.test(username);
 let sample = 'Whitespace is important in separating words';
 let countWhiteSpace = /\s/g;
 let result = sample.match(countWhiteSpace);
+
+//Task 24. Match Non-Whitespace Characters
+//Извлечение всего кроме пробелов. Количество символов без пробелов
+let sample = 'Whitespace is important in separating words';
+let countNonWhiteSpace = /\S/g;
+let result = sample.match(countNonWhiteSpace).length;
