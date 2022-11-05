@@ -159,3 +159,13 @@ let result = timRegex.test(timStr);
 let favWord = 'favorite';
 let favRegex = /favou?rite/;
 let result = favRegex.test(favWord);
+
+//Task 29. Positive and Negative Lookahead
+//пароль более 5 символов и из 2 последовательных цифр
+let sampleWord = 'astronaut';
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/;
+let result = pwRegex.test(sampleWord);
+//пароль от 3 до 6 символов и хотя бы одно число
+let password = 'abc123';
+let checkPass = /(?=\w{3,6})(?=\D*\d)/;
+checkPass.test(password);
