@@ -174,3 +174,8 @@ checkPass.test(password);
 let myString = 'Eleanor Roosevelt';
 let myRegex = /(Eleanor|Franklin D.) Roosevelt/;
 let result = myRegex.test(myString);
+
+//Task 31. Reuse Patterns Using Capture Groups
+let repeatNum = '42 42 42';
+let reRegex = /^(\d+)\s\1\s\1$/;
+let result = repeatNum.match(reRegex);
