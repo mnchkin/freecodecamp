@@ -42,3 +42,18 @@ CREATE TABLE second_table();
 
 --Task 15. Добавление колонны в таблицу
 ALTER TABLE second_table ADD COLUMN first_column INT;
+
+--Task 16
+\d second_table
+
+--Task 17
+ALTER TABLE second_table ADD COLUMN id INT;
+
+--Task 18
+\d second_table
+
+--Task 19
+ALTER TABLE second_table ADD COLUMN age INT;
+
+--Task 20
+\d second_table
