@@ -57,3 +57,18 @@ ALTER TABLE second_table ADD COLUMN age INT;
 
 --Task 20
 \d second_table
+
+--Task 21. Удаление колонны
+ALTER TABLE second_table DROP COLUMN age;
+
+--Task 22
+\d second_table
+
+--Task 23
+ALTER TABLE second_table DROP COLUMN first_column;
+
+--Task 24. Максимальная длина
+ALTER TABLE second_table ADD COLUMN name VARCHAR(30);
+
+--Task 25
+\d second_table
