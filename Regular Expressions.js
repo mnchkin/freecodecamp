@@ -144,3 +144,8 @@ let result = sample.match(countNonWhiteSpace).length;
 let ohStr = 'Ohhh no';
 let ohRegex = /Oh{3,6} no/;
 let result = ohRegex.test(ohStr);
+
+//Task 26. Specify Only the Lower Number of Matches
+let haStr = 'Hazzzzah';
+let haRegex = /Haz{4,}ah/;
+let result = haRegex.test(haStr);
