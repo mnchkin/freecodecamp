@@ -27,6 +27,23 @@ function popShift(arr) {
 console.log(popShift(['challenge', 'is', 'not', 'complete']));
 
 //Task 5. Remove Items Using splice()
+//splice() - удаляет элемент в массиве
 const arr = [2, 4, 5, 1, 7, 5, 2, 1];
 arr.splice(1, 4);
 console.log(arr);
+
+//Task 6. Add Items Using splice()
+function htmlColorNames(arr) {
+  arr.splice(0, 2, 'DarkSalmon', 'BlanchedAlmond');
+  return arr;
+}
+
+console.log(
+  htmlColorNames([
+    'DarkGoldenRod',
+    'WhiteSmoke',
+    'LavenderBlush',
+    'PaleTurquoise',
+    'FireBrick',
+  ])
+);
