@@ -15,3 +15,13 @@ function mixedNumbers(arr) {
 }
 
 console.log(mixedNumbers(['IV', 5, 'six']));
+
+//Task 4. Remove Items from an Array with pop() and shift()
+//pop() - удаляет элемент с конца массива, shift() - с начала
+function popShift(arr) {
+  let popped = arr.pop();
+  let shifted = arr.shift();
+  return [shifted, popped];
+}
+
+console.log(popShift(['challenge', 'is', 'not', 'complete']));
