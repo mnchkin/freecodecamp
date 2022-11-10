@@ -47,3 +47,13 @@ console.log(
     'FireBrick',
   ])
 );
+
+//Task 7. Copy Array Items Using slice()
+//slice() - извлекает значения в новый массив
+function forecast(arr) {
+  return arr.slice(2, 4);
+}
+
+console.log(
+  forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms'])
+);
