@@ -74,7 +74,7 @@ console.log(copyMachine([true, false, true], 2));
 //Task 9. Combine Arrays with the Spread Operator
 function spreadOut() {
   let fragment = ['to', 'code'];
-  let sentence = ['learning', ...fragment, 'is', 'fun']; // Change this line
+  let sentence = ['learning', ...fragmen
   return sentence;
 }
 
@@ -123,3 +123,21 @@ let myNestedArray = [
   ['mutate', 1327.98, 'splice', 'slice', 'push', [['deeper']]],
   ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth', [[['deepest']]]],
 ];
+
+//Task 13. Add Key-Value Pairs to JavaScript Objects
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28
+};
+
+foods.bananas = 13;
+foods.grapes = 35;
+foods.strawberries = 27;
+
+console.log(foods);
+//examples
+tekkenCharacter.origin = 'South Korea';
+tekkenCharacter['hair color'] = 'dyed orange';
+const eyes = 'eye color';
+tekkenCharacter[eyes] = 'brown';
