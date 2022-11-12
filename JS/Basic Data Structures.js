@@ -223,3 +223,29 @@ function isEveryoneHere(userObj) {
 //examples
 users.hasOwnProperty('Alan');
 'Alan' in users;
+
+//Task 18. Iterate Through the Keys of an Object with a for...in Statement
+//Перебор ключей объекта
+const users = {
+  Alan: {
+    online: false,
+  },
+  Jeff: {
+    online: true,
+  },
+  Sarah: {
+    online: false,
+  },
+};
+
+function countOnline(usersObj) {
+  let result = 0;
+  for (let user in usersObj) {
+    if (usersObj[user].online === true) {
+      result++;
+    }
+  }
+  return result;
+}
+
+console.log(countOnline(users));
