@@ -187,3 +187,39 @@ delete foods.plums;
 delete foods.strawberries;
 
 console.log(foods);
+
+//Task 17.Check if an Object has a Property
+//Проверить ести ли у объекта свойство
+let users = {
+  Alan: {
+    age: 27,
+    online: true,
+  },
+  Jeff: {
+    age: 32,
+    online: true,
+  },
+  Sarah: {
+    age: 48,
+    online: true,
+  },
+  Ryan: {
+    age: 19,
+    online: true,
+  },
+};
+
+function isEveryoneHere(userObj) {
+  if (
+    'Alan' in userObj &&
+    'Jeff' in userObj &&
+    'Sarah' in userObj &&
+    'Ryan' in userObj
+  ) {
+    return true;
+  }
+  return false;
+}
+//examples
+users.hasOwnProperty('Alan');
+'Alan' in users;
