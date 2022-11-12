@@ -74,7 +74,7 @@ console.log(copyMachine([true, false, true], 2));
 //Task 9. Combine Arrays with the Spread Operator
 function spreadOut() {
   let fragment = ['to', 'code'];
-  let sentence = ['learning', ...fragmen
+  let sentence = ['learning', ...fragment];
   return sentence;
 }
 
@@ -128,7 +128,7 @@ let myNestedArray = [
 let foods = {
   apples: 25,
   oranges: 32,
-  plums: 28
+  plums: 28,
 };
 
 foods.bananas = 13;
@@ -148,10 +148,26 @@ let userActivity = {
   date: 'January 1, 2017',
   data: {
     totalUsers: 51,
-    online: 42
-  }
+    online: 42,
+  },
 };
 
 userActivity.data.online = 45;
 
 console.log(userActivity);
+
+//Task 15. Access Property Names with Bracket Notation
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28,
+  bananas: 13,
+  grapes: 35,
+  strawberries: 27,
+};
+
+function checkInventory(scannedItem) {
+  return foods[scannedItem];
+}
+
+console.log(checkInventory('apples'));
