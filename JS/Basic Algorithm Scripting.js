@@ -85,3 +85,15 @@ function repeatStringNumTimes(str, num) {
 }
 
 repeatStringNumTimes('abc', 3);
+
+//Task 8. Truncate a String
+//Первые буквы
+function truncateString(str, num) {
+  if (str.length > num) {
+    return str.slice(0, num) + '...';
+  } else {
+    return str;
+  }
+}
+
+truncateString('A-tisket a-tasket A green and yellow basket', 8);
