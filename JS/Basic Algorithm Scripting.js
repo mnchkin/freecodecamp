@@ -146,3 +146,17 @@ function frankenSplice(arr1, arr2, n) {
 }
 
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+//Task 13. Falsy Bouncer
+//Убирает false, null, 0, "", undefined, and NaN
+function bouncer(arr) {
+  const filteredArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]) filteredArr.push(arr[i]);
+  }
+  return filteredArr;
+}
+/*Solution 2
+function bouncer(arr) {
+    return arr.filter(Boolean);
+  }*/
