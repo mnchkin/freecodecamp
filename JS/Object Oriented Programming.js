@@ -47,3 +47,12 @@ function Dog() {
   this.numLegs = 4;
 }
 let hound = new Dog();
+
+//Task 7. Extend Constructors to Receive Arguments
+function Dog(name, color) {
+  this.name = name;
+  this.color = color;
+  this.numLegs = 4;
+}
+
+let terrier = new Dog('Albus', 'brown');
