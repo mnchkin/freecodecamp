@@ -72,3 +72,16 @@ function confirmEnding(str, target) {
 }
 
 confirmEnding('Bastian', 'n');
+
+//Task 7. Repeat a String Repeat a String
+function repeatStringNumTimes(str, num) {
+  let accumulatedStr = '';
+
+  for (let i = 0; i < num; i++) {
+    accumulatedStr += str;
+  }
+
+  return accumulatedStr;
+}
+
+repeatStringNumTimes('abc', 3);
