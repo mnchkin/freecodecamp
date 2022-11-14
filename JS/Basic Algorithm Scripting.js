@@ -186,3 +186,15 @@ function mutation(arr) {
 }
 
 mutation(['hello', 'hey']);
+
+//Task 16. Chunky Monkey
+//Делит arr на size подмассивов
+function chunkArrayInGroups(arr, size) {
+  let newArr = [];
+  while (arr.length > 0) {
+    newArr.push(arr.splice(0, size));
+  }
+  return newArr;
+}
+
+chunkArrayInGroups(['a', 'b', 'c', 'd'], 2);
