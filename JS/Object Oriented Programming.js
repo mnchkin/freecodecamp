@@ -245,3 +245,20 @@ duck.constructor;
 
 Dog.prototype.constructor = Dog;
 beagle.constructor;
+
+//Task 21. Add Methods After Inheritance
+//Добавление методов после наследования
+function Animal() {}
+Animal.prototype.eat = function () {
+  console.log('nom nom nom');
+};
+
+function Dog() {}
+
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+Dog.prototype.bark = function () {
+  console.log('Woof!');
+};
+
+let beagle = new Dog();
