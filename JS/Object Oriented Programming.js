@@ -143,7 +143,6 @@ function Dog(name) {
   this.name = name;
 }
 
-// Only change code below this line
 Dog.prototype = {
   constructor: Dog,
   numLegs: 4,
@@ -154,3 +153,12 @@ Dog.prototype = {
     console.log('My name is ' + this.name);
   },
 };
+
+//Task 15. Understand Where an Object’s Prototype Comes From
+function Dog(name) {
+  this.name = name;
+}
+
+let beagle = new Dog('Snoopy');
+
+Dog.prototype.isPrototypeOf(beagle);
