@@ -90,3 +90,35 @@ function Dog(name) {
 Dog.prototype.numLegs = 4;
 
 let beagle = new Dog('Snoopy');
+
+//Task 11. Iterate Over All Properties
+//Добавляет все собственные свойства canary в массив ownProps, а prototype - в prototype
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.numLegs = 4;
+
+let beagle = new Dog('Snoopy');
+
+let ownProps = [];
+let prototypeProps = [];
+
+for (let property in beagle) {
+  if (beagle.hasOwnProperty(property)) {
+    ownProps.push(property);
+  } else {
+    prototypeProps.push(property);
+  }
+}
+
+//Task 12. Understand the Constructor Property
+function Dog(name) {
+  this.name = name;
+}
+function joinDogFraternity(candidate) {
+  if (candidate.constructor === Dog) {
+    return true;
+  }
+  return false;
+}
