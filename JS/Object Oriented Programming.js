@@ -199,3 +199,17 @@ Animal.prototype = {
     console.log('nom nom nom');
   },
 };
+
+//Task 18. Inherit Behaviors from a Supertype
+//Наследование поведения от Супертипа
+function Animal() {}
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function () {
+    console.log('nom nom nom');
+  },
+};
+
+let duck = Object.create(Animal.prototype);
+let beagle = Object.create(Animal.prototype);
