@@ -192,3 +192,18 @@ INSERT INTO characters(name, homeland, favorite_color) VALUES('Toadstool', 'Mush
 
 --Task 65
 INSERT INTO characters(name, homeland, favorite_color) VALUES('Daisy', 'Sarasaland', 'Yellow'), ('Yoshi', 'Dinosaur Land', 'Green');
+
+--Task 66
+SELECT * FROM characters;
+
+--Task 67. Обновление таблицы
+UPDATE characters SET favorite_color='Orange' WHERE name='Daisy';
+
+--Task 68
+SELECT * FROM characters;
+
+--Task 69
+UPDATE characters SET name='Toad' WHERE favorite_color='Red';
+
+--Task 70
+SELECT * FROM characters;
