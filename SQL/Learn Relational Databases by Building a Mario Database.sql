@@ -117,3 +117,18 @@ SELECT * FROM second_table;
 
 --Task 40
 ALTER TABLE second_table DROP COLUMN username;
+
+--Task 41
+ALTER TABLE second_table DROP COLUMN id;
+
+--Task 42
+\d second_table
+
+--Task 43. Удаление таблицы
+DROP TABLE second_table;
+
+--Task 44
+DROP TABLE first_table;
+
+--Task 45
+/l
