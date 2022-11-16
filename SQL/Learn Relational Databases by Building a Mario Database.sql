@@ -132,3 +132,18 @@ DROP TABLE first_table;
 
 --Task 45
 /l
+
+--Task 46. Переименование БД
+ALTER DATABASE first_database RENAME TO mario_database;
+
+--Task 47
+\l
+
+--Task 48
+\c mario_database
+
+--Task 49
+DROP DATABASE second_database;
+
+--Task 50
+\l
