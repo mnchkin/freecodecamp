@@ -177,3 +177,18 @@ INSERT INTO characters(name, homeland, favorite_color) VALUES('Mario', 'Mushroom
 
 --Task 60
 SELECT * FROM characters;
+
+--Task 61
+INSERT INTO characters(name, homeland, favorite_color) VALUES('Luigi', 'Mushroom Kingdom', 'Green');
+
+--Task 62
+SELECT * FROM characters;
+
+--Task 63
+INSERT INTO characters(name, homeland, favorite_color) VALUES('Peach', 'Mushroom Kingdom', 'Pink');
+
+--Task 64
+INSERT INTO characters(name, homeland, favorite_color) VALUES('Toadstool', 'Mushroom Kingdom', 'Red'), ('Bowser', 'Mushroom Kingdom', 'Green');
+
+--Task 65
+INSERT INTO characters(name, homeland, favorite_color) VALUES('Daisy', 'Sarasaland', 'Yellow'), ('Yoshi', 'Dinosaur Land', 'Green');
