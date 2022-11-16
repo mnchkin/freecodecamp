@@ -222,3 +222,18 @@ UPDATE characters SET favorite_color='Yellow' WHERE character_id=5;
 
 --Task 75
 UPDATE characters SET homeland='Koopa Kingdom' WHERE character_id=5;
+
+--Task 76
+SELECT * FROM characters;
+
+--Task 77. Всё по порядку по колонне character_id
+SELECT * FROM characters ORDER BY character_id;
+
+--Task 78. Добавление первичного ключа
+ALTER TABLE characters ADD PRIMARY KEY(name);
+
+--Task 79. Удаление первичного ключа
+ALTER TABLE characters DROP CONSTRAINT characters_pkey;
+
+--Task 80
+\d characters
