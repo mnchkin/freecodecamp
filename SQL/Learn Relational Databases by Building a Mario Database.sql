@@ -115,7 +115,7 @@ SELECT * FROM second_table;
 --Task 39
 \d second_table
 
---Task 40
+--Task 40. Удаление колонны
 ALTER TABLE second_table DROP COLUMN username;
 
 --Task 41
@@ -147,3 +147,33 @@ DROP DATABASE second_database;
 
 --Task 50
 \l
+
+--Task 51
+\d
+
+--Task 52
+CREATE TABLE characters();
+
+--Task 53. SERIAL делает столбец INT с ограничением NOT NULL
+ALTER TABLE characters ADD COLUMN character_id SERIAL;
+
+--Task 54
+\d characters
+
+--Task 55
+ALTER TABLE characters ADD COLUMN name VARCHAR(30) NOT NULL;
+
+--Task 56
+ALTER TABLE characters ADD COLUMN homeland VARCHAR(60);
+
+--Task 57
+ALTER TABLE characters ADD COLUMN favorite_color VARCHAR(30);
+
+--Task 58
+\d characters
+
+--Task 59
+INSERT INTO characters(name, homeland, favorite_color) VALUES('Mario', 'Mushroom Kingdom', 'Red');
+
+--Task 60
+SELECT * FROM characters;
