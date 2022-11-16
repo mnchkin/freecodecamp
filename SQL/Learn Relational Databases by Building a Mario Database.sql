@@ -207,3 +207,18 @@ UPDATE characters SET name='Toad' WHERE favorite_color='Red';
 
 --Task 70
 SELECT * FROM characters;
+
+--Task 71
+UPDATE characters SET name='Mario' WHERE character_id=1;
+
+--Task 72
+SELECT * FROM characters;
+
+--Task 73
+UPDATE characters SET favorite_color='Blue' WHERE character_id=4;
+
+--Task 74
+UPDATE characters SET favorite_color='Yellow' WHERE character_id=5;
+
+--Task 75
+UPDATE characters SET homeland='Koopa Kingdom' WHERE character_id=5;
