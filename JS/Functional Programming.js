@@ -406,3 +406,18 @@ const filteredList = watchList
   }
 })
 console.log(filteredList);
+
+//Task 10. Implement the filter Method on a Prototype
+Array.prototype.myFilter = function(callback) {
+  const newArray = [];
+for (let i = 0; i < this.length; i++) {
+  if (callback(this[i]) == true) {
+    newArray.push(this[i]);
+  }
+}
+  return newArray;
+};
+
+// Test case
+const s = [23, 65, 98, 5];
+const odd_s = s.myFilter(item => item % 2 === 1);
