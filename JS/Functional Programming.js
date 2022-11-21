@@ -97,3 +97,12 @@ const finalTabs = socialWindow
   .join(videoWindow.tabClose(2)) // Close third tab in video window, and join
   .join(workWindow.tabClose(1).tabOpen());
 console.log(finalTabs.tabs);
+
+//Task 4. Avoid Mutations and Side Effects Using Functional Programming
+// The global variable
+let fixedValue = 4;
+
+function incrementer() {
+return fixedValue + 1;
+
+}
