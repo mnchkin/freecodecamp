@@ -421,3 +421,11 @@ for (let i = 0; i < this.length; i++) {
 // Test case
 const s = [23, 65, 98, 5];
 const odd_s = s.myFilter(item => item % 2 === 1);
+
+//Task 11. Return Part of an Array Using the slice Method
+function sliceArray(anim, beginSlice, endSlice) {
+return anim.slice(beginSlice, endSlice);
+}
+
+const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+sliceArray(inputAnim, 1, 3);
