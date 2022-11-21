@@ -429,3 +429,11 @@ return anim.slice(beginSlice, endSlice);
 
 const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
 sliceArray(inputAnim, 1, 3);
+
+//Task 12. Remove Elements from an Array Using slice Instead of splice
+function nonMutatingSplice(cities) {
+  return cities.slice(0, 3);
+}
+
+const inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+nonMutatingSplice(inputCities);
