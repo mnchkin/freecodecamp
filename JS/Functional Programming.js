@@ -656,3 +656,11 @@ const bySpace = str.split(' '); //Каждое слово в массив, ("") 
 
 const otherString = 'How9are7you2today';
 const byDigits = otherString.split(/\d/); //Каждое слово в массив без цифр
+
+//Task 20. Combine an Array into a String Using the join Method
+//Объединяет массив в строку
+function sentensify(str) {
+  return str.split(/\W/).join(' ');
+}
+
+sentensify('May-the-force-be-with-you');
