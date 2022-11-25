@@ -642,3 +642,17 @@ function nonMutatingSort(arr) {
 }
 
 nonMutatingSort(globalArray);
+
+//Task 19. Split a String into an Array Using the split Method
+//Каждое слово в массиве без символов
+function splitify(str) {
+  return str.split(/\W/);
+}
+
+splitify('Hello World,I-am code');
+//example
+const str = 'Hello World';
+const bySpace = str.split(' '); //Каждое слово в массив, ("") - каждый символ
+
+const otherString = 'How9are7you2today';
+const byDigits = otherString.split(/\d/); //Каждое слово в массив без цифр
