@@ -664,3 +664,13 @@ function sentensify(str) {
 }
 
 sentensify('May-the-force-be-with-you');
+
+//Task 21. Apply Functional Programming to Convert Strings to URL Slugs
+function urlSlug(title) {
+  return title
+    .toLowerCase()
+    .trim()
+    .split(/\s+/)
+    .join("-");
+}
+urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone");
