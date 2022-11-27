@@ -674,3 +674,9 @@ function urlSlug(title) {
     .join("-");
 }
 urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone");
+
+//Task 22. Use the every Method to Check that Every Element in an Array Meets a Criteria
+function checkPositive(arr) {
+  return arr.every(val => val > 0);
+}
+checkPositive([1, 2, 3, -4, 5]);
