@@ -667,22 +667,29 @@ sentensify('May-the-force-be-with-you');
 
 //Task 21. Apply Functional Programming to Convert Strings to URL Slugs
 function urlSlug(title) {
-  return title
-    .toLowerCase()
-    .trim()
-    .split(/\s+/)
-    .join("-");
+  return title.toLowerCase().trim().split(/\s+/).join('-');
 }
-urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone");
+urlSlug('A Mind Needs Books Like A Sword Needs A Whetstone');
 
 //Task 22. Use the every Method to Check that Every Element in an Array Meets a Criteria
 function checkPositive(arr) {
-  return arr.every(val => val > 0);
+  return arr.every((val) => val > 0);
 }
 checkPositive([1, 2, 3, -4, 5]);
 
 //Task 23. Use the some Method to Check that Any Elements in an Array Meet a Criteria
 function checkPositive(arr) {
-  return arr.some(elem => elem > 0);
+  return arr.some((elem) => elem > 0);
 }
 checkPositive([1, 2, 3, -4, 5]);
+
+//Task 24. Introduction to Currying and Partial Application
+function add(x) {
+  return function (y) {
+    return function (z) {
+      return x + y + z;
+    };
+  };
+}
+
+add(10)(20)(30);
