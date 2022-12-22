@@ -252,3 +252,18 @@ CREATE TABLE more_info();
 
 --Task 85
 \d characters
+
+--Task 86
+ALTER TABLE more_info ADD COLUMN more_info_id SERIAL;
+
+--Task 87
+ALTER TABLE more_info ADD PRIMARY KEY(more_info_id);
+
+--Task 88
+\d
+
+--Task 89
+ALTER TABLE more_info ADD COLUMN birthday DATE;
+
+--Task 90
+ALTER TABLE more_info ADD COLUMN height INT;
