@@ -282,3 +282,18 @@ ALTER TABLE more_info ADD COLUMN character_id INT REFERENCES characters(characte
 
 --Task 95
 ALTER TABLE more_info ADD UNIQUE(character_id);
+
+--Task 96
+ALTER TABLE more_info ALTER COLUMN character_id SET NOT NULL;
+
+--Task 97
+\d more_info
+
+--Task 98
+SELECT character_id FROM characters;
+
+--Task 99
+SELECT character_id, name FROM characters;
+
+--Task 100
+INSERT INTO more_info(birthday, height, weight, character_id) VALUES('1981-07-09', 155, 64.5, 1);
