@@ -297,3 +297,18 @@ SELECT character_id, name FROM characters;
 
 --Task 100
 INSERT INTO more_info(birthday, height, weight, character_id) VALUES('1981-07-09', 155, 64.5, 1);
+
+--Task 101
+SELECT * FROM more_info
+
+--Task 102
+SELECT character_id, name FROM characters;
+
+--Task 103
+INSERT INTO more_info(birthday, height, weight, character_id) VALUES('1983-07-14', 175, 48.8, 2);
+
+--Task 104
+SELECT * FROM more_info;
+
+--Task 105
+SELECT character_id, name FROM characters;
