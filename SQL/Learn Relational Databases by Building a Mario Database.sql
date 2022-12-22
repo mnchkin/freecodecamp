@@ -267,3 +267,18 @@ ALTER TABLE more_info ADD COLUMN birthday DATE;
 
 --Task 90
 ALTER TABLE more_info ADD COLUMN height INT;
+
+--Task 91. NUMERIC(4, 1) - десятичная дробь. 4 цифры, 1 цифра после запятой
+ALTER TABLE more_info ADD COLUMN weight NUMERIC(4, 1);
+
+--Task 92
+\d more_info
+
+--Task 93. Создание внешнего ключа
+ALTER TABLE more_info ADD COLUMN character_id INT REFERENCES characters(character_id);
+
+--Task 94
+\d more_info
+
+--Task 95
+ALTER TABLE more_info ADD UNIQUE(character_id);
