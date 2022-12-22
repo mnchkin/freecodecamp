@@ -312,3 +312,18 @@ SELECT * FROM more_info;
 
 --Task 105
 SELECT character_id, name FROM characters;
+
+--Task 106
+INSERT INTO more_info(birthday, height, weight, character_id) VALUES('1985-10-18', 173, 52.2, 3);
+
+--Task 107
+SELECT character_id, name FROM characters WHERE name='Toad';
+
+--Task 108
+INSERT INTO more_info(birthday, height, weight, character_id) VALUES('1950-01-10', 66, 35.6, 4);
+
+--Task 109
+SELECT * FROM more_info;
+
+--Task 110
+SELECT character_id, name FROM characters WHERE name='Bowser';
