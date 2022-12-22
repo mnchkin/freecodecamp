@@ -237,3 +237,18 @@ ALTER TABLE characters DROP CONSTRAINT characters_pkey;
 
 --Task 80
 \d characters
+
+--Task 81
+ALTER TABLE characters ADD PRIMARY KEY(character_id);
+
+--Task 82
+\d characters
+
+--Task 83
+CREATE TABLE more_info();
+
+--Task 84
+\d
+
+--Task 85
+\d characters
