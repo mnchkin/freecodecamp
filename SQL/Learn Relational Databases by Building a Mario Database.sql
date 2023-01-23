@@ -417,3 +417,18 @@ SELECT * FROM actions;
 
 --Task 140
 CREATE TABLE character_actions();
+
+--Task 141
+ALTER TABLE character_actions ADD COLUMN character_id INT NOT NULL;
+
+--Task 142
+ALTER TABLE character_actions ADD FOREIGN KEY(character_id) REFERENCES characters(character_id);
+
+--Task 143
+\d character_actions;
+
+--Task 144
+ALTER TABLE character_actions ADD COLUMN action_id INT NOT NULL;
+
+--Task 145
+ALTER TABLE character_actions ADD FOREIGN KEY(action_id) REFERENCES actions(action_id);
