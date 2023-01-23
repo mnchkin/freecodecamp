@@ -462,3 +462,18 @@ INSERT INTO character_actions(action_id, character_id) VALUES(1, 3), (2, 3), (3,
 
 --Task 155
 INSERT INTO character_actions(action_id, character_id) VALUES(1, 2), (2, 2), (3, 2);
+
+--Task 156
+INSERT INTO character_actions(action_id, character_id) VALUES(1, 1), (2, 1), (3, 1); 
+
+--Task 157
+SELECT * FROM character_actions;
+
+--Task 158
+\d
+
+--Task 159
+SELECT * FROM characters;
+
+--Task 160. Получение всех данных из обеих таблиц с помощью команды JOIN
+SELECT * FROM characters FULL JOIN more_info ON characters.character_id = more_info.character_id;
