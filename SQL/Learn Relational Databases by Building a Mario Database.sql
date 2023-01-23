@@ -372,3 +372,18 @@ ALTER TABLE sounds ADD COLUMN character_id INT NOT NULL REFERENCES characters(ch
 
 --Task 125
 \d sounds
+
+--Task 126
+SELECT * FROM characters ORDER BY character_id;
+
+--Task 127
+INSERT INTO sounds(filename, character_id) VALUES('its-a-me.wav', 1);
+
+--Task 128
+INSERT INTO sounds(filename, character_id) VALUES('yippee.wav', 1);
+
+--Task 129
+INSERT INTO sounds(filename, character_id) VALUES('ha-ha.wav', 2);
+
+--Task 130
+INSERT INTO sounds(filename, character_id) VALUES('oh-yeah.wav', 2);
