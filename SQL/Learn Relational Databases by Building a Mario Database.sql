@@ -477,3 +477,9 @@ SELECT * FROM characters;
 
 --Task 160. Получение всех данных из обеих таблиц с помощью команды JOIN
 SELECT * FROM characters FULL JOIN more_info ON characters.character_id = more_info.character_id;
+
+--Task 161
+SELECT * FROM characters FULL JOIN sounds ON characters.character_id = sounds.character_id;
+
+--Task 162
+SELECT * FROM character_actions FULL JOIN characters ON character_actions.character_id = characters.character_id FULL JOIN actions ON character_actions.action_id = actions.action_id;
