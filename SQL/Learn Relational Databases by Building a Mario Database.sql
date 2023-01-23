@@ -402,3 +402,18 @@ CREATE TABLE actions(action_id SERIAL PRIMARY KEY);
 
 --Task 135
 ALTER TABLE actions ADD COLUMN action VARCHAR(20) NOT NULL UNIQUE;
+
+--Task 136
+INSERT INTO actions(action) VALUES('run');
+
+--Task 137
+INSERT INTO actions(action) VALUES('jump');
+
+--Task 138
+INSERT INTO actions(action) VALUES('duck');
+
+--Task 139
+SELECT * FROM actions;
+
+--Task 140
+CREATE TABLE character_actions();
