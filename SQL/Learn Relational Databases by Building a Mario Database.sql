@@ -357,3 +357,18 @@ ALTER TABLE more_info RENAME COLUMN weight TO weight_in_kg;
 
 --Task 120
 SELECT * FROM more_info;
+
+--Task 121. Создание таблицы
+CREATE TABLE sounds(sound_id SERIAL PRIMARY KEY);
+
+--Task 122
+\d
+
+--Task 123
+ALTER TABLE sounds ADD COLUMN filename VARCHAR(40) NOT NULL UNIQUE;
+
+--Task 124
+ALTER TABLE sounds ADD COLUMN character_id INT NOT NULL REFERENCES characters(character_id);
+
+--Task 125
+\d sounds
