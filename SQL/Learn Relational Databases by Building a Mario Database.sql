@@ -342,3 +342,18 @@ SELECT * FROM more_info;
 
 --Task 115
 SELECT character_id, name FROM characters WHERE name='Yoshi';
+
+--Task 116
+INSERT INTO more_info(birthday, height, weight, character_id) VALUES('1990-04-13', 162, 59.1, 7);
+
+--Task 117
+SELECT * FROM more_info;
+
+--Task 118
+ALTER TABLE more_info RENAME COLUMN height TO height_in_cm;
+
+--Task 119
+ALTER TABLE more_info RENAME COLUMN weight TO weight_in_kg;
+
+--Task 120
+SELECT * FROM more_info;
