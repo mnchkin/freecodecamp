@@ -447,3 +447,18 @@ INSERT INTO character_actions(action_id, character_id) VALUES(1, 7), (2, 7), (3,
 
 --Task 150
 SELECT * FROM character_actions;
+
+--Task 151
+INSERT INTO character_actions(action_id, character_id) VALUES(1, 6), (2, 6), (3, 6);
+
+--Task 152
+INSERT INTO character_actions(action_id, character_id) VALUES(1, 5), (2, 5), (3, 5);
+
+--Task 153
+INSERT INTO character_actions(action_id, character_id) VALUES(1, 4), (2, 4), (3, 4);
+
+--Task 154
+INSERT INTO character_actions(action_id, character_id) VALUES(1, 3), (2, 3), (3, 3);
+
+--Task 155
+INSERT INTO character_actions(action_id, character_id) VALUES(1, 2), (2, 2), (3, 2);
