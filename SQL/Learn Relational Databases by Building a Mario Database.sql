@@ -387,3 +387,18 @@ INSERT INTO sounds(filename, character_id) VALUES('ha-ha.wav', 2);
 
 --Task 130
 INSERT INTO sounds(filename, character_id) VALUES('oh-yeah.wav', 2);
+
+--Task 131. Добавление нескольких значений
+INSERT INTO sounds(filename, character_id) VALUES('yay.wav', 3), ('woo-hoo.wav', 3);
+
+--Task 132
+INSERT INTO sounds(filename, character_id) VALUES('mm-hmm.wav', 3), ('yahoo.wav', 1);
+
+--Task 133
+SELECT * FROM sounds;
+
+--Task 134
+CREATE TABLE actions(action_id SERIAL PRIMARY KEY);
+
+--Task 135
+ALTER TABLE actions ADD COLUMN action VARCHAR(20) NOT NULL UNIQUE;
