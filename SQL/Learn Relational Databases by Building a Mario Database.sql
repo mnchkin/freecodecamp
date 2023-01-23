@@ -432,3 +432,18 @@ ALTER TABLE character_actions ADD COLUMN action_id INT NOT NULL;
 
 --Task 145
 ALTER TABLE character_actions ADD FOREIGN KEY(action_id) REFERENCES actions(action_id);
+
+--Task 146
+\d character_actions;
+
+--Task 147
+ALTER TABLE character_actions ADD PRIMARY KEY(character_id, action_id);
+
+--Task 148
+\d character_actions;
+
+--Task 149
+INSERT INTO character_actions(action_id, character_id) VALUES(1, 7), (2, 7), (3, 7);
+
+--Task 150
+SELECT * FROM character_actions;
