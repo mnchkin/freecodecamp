@@ -21,3 +21,11 @@ function diffArray(arr1, arr2) {
 }
 
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]); //вернет [4]
+
+/*Task 3. Seek and Destroy
+Удалить элементы из массива, которые имеют то же значение */
+function destroyer(arr, ...something) {
+  return arr.filter((item) => !something.includes(item));
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3); //Удаляет все 2 и 3. И возвращает [1, 1]
