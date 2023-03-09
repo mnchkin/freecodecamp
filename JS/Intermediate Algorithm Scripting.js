@@ -29,3 +29,22 @@ function destroyer(arr, ...something) {
 }
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3); //Удаляет все 2 и 3. И возвращает [1, 1]
+
+//Task 4. Wherefore art thou
+function whatIsInAName(collection, source) {
+  const sourceKeys = Object.keys(source);
+  return collection.filter((obj) =>
+    sourceKeys.every(
+      (key) => obj.hasOwnProperty(key) && obj[key] === source[key]
+    )
+  );
+}
+
+whatIsInAName(
+  [
+    { first: 'Romeo', last: 'Montague' },
+    { first: 'Mercutio', last: null },
+    { first: 'Tybalt', last: 'Capulet' },
+  ],
+  { last: 'Capulet' }
+); //возвращает [{ first: "Tybalt", last: "Capulet" }]
