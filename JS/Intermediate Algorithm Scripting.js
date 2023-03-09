@@ -48,3 +48,15 @@ whatIsInAName(
   ],
   { last: 'Capulet' }
 ); //возвращает [{ first: "Tybalt", last: "Capulet" }]
+
+//Task 5. Spinal Tap Case
+function spinalCase(str) {
+  str = str.replace(/([a-z])([A-Z])/g, '$1 $2');
+  // Split on whitespace and underscores and join with dash
+  return str
+    .toLowerCase()
+    .split(/(?:_| )+/)
+    .join('-');
+}
+
+spinalCase('AllThe-small Things'); //возвращает all-the-small-things
