@@ -60,3 +60,14 @@ function spinalCase(str) {
 }
 
 spinalCase('AllThe-small Things'); //возвращает all-the-small-things
+
+//Task 6. Pig Latin
+function translatePigLatin(str) {
+  let consonantRegex = /^[^aeiou]+/;
+  let myConsonants = str.match(consonantRegex);
+  return myConsonants !== null
+    ? str.replace(consonantRegex, '').concat(myConsonants).concat('ay')
+    : str.concat('way');
+}
+
+translatePigLatin('glove'); // возвращает oveglay
