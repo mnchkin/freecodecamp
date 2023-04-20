@@ -116,3 +116,18 @@ function pairElement(str) {
 }
 
 pairElement('ATCGA'); // возвращает [["A","T"],["T","A"],["C","G"],["G","C"],["A","T"]]
+
+//Task 9. Missing letters
+function fearNotLetter(str) {
+  for (let i = 0; i < str.length; i++) {
+    const charCode = str.charCodeAt(i);
+
+    if (charCode !== str.charCodeAt(0) + i) {
+      return String.fromCharCode(charCode - 1);
+    }
+  }
+  return undefined;
+}
+
+fearNotLetter('abce'); // возвращает d
+fearNotLetter('aabcdefghijklmnopqrstuvwxyz'); // возвращает undefined
