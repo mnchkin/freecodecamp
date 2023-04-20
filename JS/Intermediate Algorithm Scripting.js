@@ -91,3 +91,28 @@ function myReplace(str, before, after) {
 }
 
 myReplace('I think we should look up there', 'up', 'Down'); // возвращает I think we should look down there.
+
+//Task 8. DNA Pairing
+function pairElement(str) {
+  const basePair = function (char) {
+    switch (char) {
+      case 'A':
+        return ['A', 'T'];
+      case 'T':
+        return ['T', 'A'];
+      case 'C':
+        return ['C', 'G'];
+      case 'G':
+        return ['G', 'C'];
+    }
+  };
+
+  const pairs = [];
+  for (let i = 0; i < str.length; i++) {
+    pairs.push(basePair(str[i]));
+  }
+
+  return pairs;
+}
+
+pairElement('ATCGA'); // возвращает [["A","T"],["T","A"],["C","G"],["G","C"],["A","T"]]
