@@ -187,3 +187,21 @@ function convertHTML(str) {
 }
 
 convertHTML('Dolce & Gabbana'); // возвращает Dolce &amp; Gabbana
+
+//Task 12. Sum All Odd Fibonacci Numbers. Сумма всех нечетных чисел Фибоначчи
+function sumFibs(num) {
+  let prevNumber = 0;
+  let currNumber = 1;
+  let result = 0;
+  while (currNumber <= num) {
+    if (currNumber % 2 !== 0) {
+      result += currNumber;
+    }
+    currNumber += prevNumber;
+    prevNumber = currNumber - prevNumber;
+  }
+
+  return result;
+}
+
+sumFibs(4); // возвращает 5
