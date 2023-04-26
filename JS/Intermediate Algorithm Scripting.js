@@ -131,3 +131,29 @@ function fearNotLetter(str) {
 
 fearNotLetter('abce'); // возвращает d
 fearNotLetter('aabcdefghijklmnopqrstuvwxyz'); // возвращает undefined
+
+//Task 10. Sorted Union
+function uniteUnique(arr1, arr2, arr3) {
+  // Создает пустой массив для хранения нашего конечного результата.
+  const finalArray = [];
+
+  // Пройдитесь по объекту аргументов, чтобы действительно заставить программу работать с двумя или более массивами
+  // вместо 3.
+  for (let i = 0; i < arguments.length; i++) {
+    const arrayArguments = arguments[i];
+
+    // Просматривает текущий массив
+    for (let j = 0; j < arrayArguments.length; j++) {
+      let indexValue = arrayArguments[j];
+
+      // Проверяет, не находится ли значение уже в конечном массиве.
+      if (finalArray.indexOf(indexValue) < 0) {
+        finalArray.push(indexValue);
+      }
+    }
+  }
+
+  return finalArray;
+}
+
+uniteUnique([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8]); // возвращает [1, 2, 3, 5, 4, 6, 7, 8]
