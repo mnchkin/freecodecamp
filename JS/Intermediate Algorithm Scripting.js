@@ -157,3 +157,33 @@ function uniteUnique(arr1, arr2, arr3) {
 }
 
 uniteUnique([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8]); // возвращает [1, 2, 3, 5, 4, 6, 7, 8]
+
+//Task 11. Convert HTML Entities
+function convertHTML(str) {
+  var temp = str.split('');
+
+  for (var i = 0; i < temp.length; i++) {
+    switch (temp[i]) {
+      case '<':
+        temp[i] = '&lt;';
+        break;
+      case '&':
+        temp[i] = '&amp;';
+        break;
+      case '>':
+        temp[i] = '&gt;';
+        break;
+      case '"':
+        temp[i] = '&quot;';
+        break;
+      case "'":
+        temp[i] = '&apos;';
+        break;
+    }
+  }
+
+  temp = temp.join('');
+  return temp;
+}
+
+convertHTML('Dolce & Gabbana'); // возвращает Dolce &amp; Gabbana
