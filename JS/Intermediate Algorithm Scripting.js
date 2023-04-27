@@ -244,3 +244,15 @@ function smallestCommons(arr) {
 }
 
 smallestCommons([5, 1]); // возвращает 60.
+
+//Task 15. Drop it
+function dropElements(arr, func) {
+  while (arr.length > 0 && !func(arr[0])) {
+    arr.shift();
+  }
+  return arr;
+}
+
+dropElements([1, 2, 3, 7, 4], function (n) {
+  return n > 3;
+}); // возвращает [7, 4].
