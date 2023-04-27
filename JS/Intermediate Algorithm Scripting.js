@@ -256,3 +256,11 @@ function dropElements(arr, func) {
 dropElements([1, 2, 3, 7, 4], function (n) {
   return n > 3;
 }); // возвращает [7, 4].
+
+//Task 16. Steamroller
+function steamrollArray(arr) {
+  const flat = [].concat(...arr);
+  return flat.some(Array.isArray) ? steamrollArray(flat) : flat;
+}
+
+steamrollArray([1, [2], [3, [[4]]]]); // возвращает [1, 2, 3, 4].
