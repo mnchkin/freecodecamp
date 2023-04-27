@@ -278,3 +278,17 @@ function binaryAgent(str) {
 binaryAgent(
   '01001001 00100000 01101100 01101111 01110110 01100101 00100000 01000110 01110010 01100101 01100101 01000011 01101111 01100100 01100101 01000011 01100001 01101101 01110000 00100001'
 ); // возвращает I love FreeCodeCamp!
+
+//Task 18. Everything Be True
+function truthCheck(collection, pre) {
+  return collection.every((obj) => obj[pre]);
+}
+
+truthCheck(
+  [
+    { name: 'Pikachu', number: 25, caught: 3 },
+    { name: 'Togepi', number: 175, caught: 1 },
+    { name: 'MissingNo', number: NaN, caught: 0 },
+  ],
+  'number'
+); // возвращает false.
