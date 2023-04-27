@@ -205,3 +205,14 @@ function sumFibs(num) {
 }
 
 sumFibs(4); // возвращает 5
+
+//Task 13. Sum All Primes. Сумма всех простых чисел
+function sumPrimes(num) {
+  let primes = [];
+  for (let i = 2; i <= num; i++) {
+    if (primes.every((prime) => i % prime !== 0)) primes.push(i);
+  }
+  return primes.reduce((sum, prime) => sum + prime, 0);
+}
+
+sumPrimes(977); // возвращает 73156.
