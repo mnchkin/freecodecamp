@@ -42,3 +42,20 @@ function convertToRoman(num) {
 }
 
 convertToRoman(83); //возвращает LXXXIII
+
+//Task 3. Caesars Cipher. Шифр Цезаря
+function rot13(str) {
+  let strAm = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ -_.&?!@ #/';
+  let strNz = 'NOPQRSTUVWXYZABCDEFGHIJKLM -_.&?!@ #/';
+  let rot13 = '';
+  for (let i = 0; i < str.length; i++) {
+    if (strAm.includes(str.charAt(i))) {
+      rot13 += str
+        .charAt(i)
+        .replace(str.charAt(i), strNz[strAm.indexOf(str.charAt(i))]);
+    }
+  }
+  return rot13;
+}
+
+rot13('SERR YBIR?'); //возвращает FREE LOVE?
