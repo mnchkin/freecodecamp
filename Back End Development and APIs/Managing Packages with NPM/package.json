@@ -1,0 +1,24 @@
+{
+  "author": "Timur Shirmanov",
+  "description": "A project that does something awesome",
+  "keywords": [
+    "descriptive",
+    "freecodecamp",
+    "related",
+    "words"
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "dependencies": {
+    "@freecodecamp/example": "~1.2.13"
+  },
+  "name": "fcc-learn-npm-package-json",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://idontknow/todo.git"
+  }
+}
