@@ -6,6 +6,9 @@ console.log('Hello World');
     function - обработчик;
         req - объект запроса;
         res - объект ответа   */
-app.get('/', function (req, res) {
+/*app.get('/', function (req, res) {
   res.send('Hello Express');
+});*/
+app.get('/', function (req, res) {
+  res.sendFile(__dirname + '/views/index.html');
 });
